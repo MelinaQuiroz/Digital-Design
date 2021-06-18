@@ -1,0 +1,252 @@
+/*Pagina de Inicio, Logo y Titulo*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    
+   font-family: "Krub", sans-serif;
+   
+  }
+  
+  /*Todo el header*/
+  
+  header {
+    font-size: 16px;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 5px;
+  
+    background-image:linear-gradient(to bottom, rgb(59, 65, 71), white) ;
+  }
+  
+ 
+  #logo {
+   display: flex;
+   width: 200px;
+   height: 100px;
+   margin-left: 850px;
+   
+  }
+  
+  .botones_links a {
+    text-decoration: none;
+    margin-right: 100px;
+    display: flex;
+    justify-content: right;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px;
+    grid-template-areas: "logo ingresar registrarse";
+  
+  
+  }
+  .ingresar {
+    grid-area: ingresar;
+    
+  }
+  
+  
+  
+  /*Enlaces del Navegador*/
+  
+  .navegacion-principal {
+    width:100%;
+    height:40px;
+    background-color: rgb(68, 63, 63);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    margin-top: 0;
+    margin-right: 100px;
+    margin-bottom: 0;
+  }
+  
+  .navegacion-principal a {
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+    
+  }
+  
+  
+  .navegacion-principal a:hover {
+    color: rgb(46, 106, 163);
+  }
+  
+  /*Imagen principal*/
+  
+  .domótica {
+  width: 100%;
+  height: 600px;
+  background-color: rgb(black)
+   
+    
+  
+  }
+  
+  
+  /*Pagina de Inicio - Section*/
+  
+  .nuestros_productos {
+    color:rgb(39, 37, 37);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  
+  }
+  
+  .buscador {
+    display: flex;
+    justify-content: right;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    
+  
+  }
+  
+  .buscador_input {
+    width: 400px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: black;
+    
+   }
+  
+  .contenedor {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  
+  }
+  .contenedor .tarjeta {
+     width: 330px;
+     height: 430px;
+     border-radius: 8px;
+     box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
+     overflow: hidden;
+     margin: 20px;
+     text-align: center;
+     transition: all 0.25s ;
+  }
+  
+  .contenedor .tarjeta:hover {
+     transform: translateY(-15px);
+     box-shadow: 0 12px 16px rgb(0, 0, 0, 0.2);
+  }
+  
+  .contenedor .tarjeta img {
+     width: 330px;
+     height: 220px;
+  
+  }
+  
+  .contenedor .tarjeta h3 {
+    font-weight: 700;
+  }
+  
+  
+  
+  /*Contacto.html*/
+  
+  .tituloContacto {
+      display: flex;
+      justify-content: center;
+  }
+  .formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+    background-color: rgb(99, 147, 187);
+    font-size: 18px;
+    
+  
+  
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .seccionesFormulario {
+    display: grid;
+    padding: 10px;
+  
+  }
+  
+  /*Productos.html*/
+  
+  .intWifi {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 500px;
+    margin-top: 100px;
+  
+  }
+  
+  .imagenes-producto {
+    display: flex;
+    justify-content: flex-start;
+    
+    height: 400px;
+    width: 400px;
+  
+  }
+  
+  /*Footer,redes sociales*/
+  
+  .redes-sociales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display:grid;
+    grid-template-columns:  70px 70px 70px;
+    grid-template-rows: 100px;
+    grid-template-areas: "facebook instagram whatsapp"
+                          "texto texto texto";
+    margin-top: 500px;
+    
+  }
+  
+  .facebook {
+       grid-area: facebook;
+           
+  }
+  
+  .instagram {
+       grid-area: instagram;
+       
+  }
+  
+  .whatsapp {
+       grid-area: whatsapp;
+  }
+  
+  .marca-de-la-pagina {
+    
+    grid-area: texto;
+    display: flex;
+    text-align: center;
+  
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+  
+  }
+  
+  
+  
