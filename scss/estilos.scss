@@ -1,0 +1,553 @@
+$tipografia_principal: "Krub", sans-serif;
+$background_color_principal: rgb(46, 44, 44);
+
+$color_1: rgb(74, 74, 211);
+$color_2: rgb(31, 29, 29);
+$color_3: rgb(61, 59, 59);
+
+#et-main-area{
+    position: relative;
+    z-index: 0;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $tipografia_principal;
+    background-color: $background_color_principal;
+}
+
+/*Todo el header*/
+.header {
+     background-color:$color_2;
+     height: 100px;
+     width: 100%;
+
+     .nav {
+        display: flex;
+        justify-content:space-between;
+        margin: 0 auto;
+        
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+        }
+    
+        .logo {
+            color:$color_1;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 25px;
+            padding: 0 30px;
+            line-height: 100px;
+            
+            .logo:hover {
+                transform: scale(1.05);
+                transition:all 0.20s;
+                color: $color_1;
+            }
+        }
+        
+        .nav-menu {
+            display: flex;
+            text-transform: uppercase;
+            margin-right:30px;
+            list-style: none;
+           
+            .nav-menu-item {
+                font-size: 18px; 
+                line-height: 90px;
+                margin: 0 10px;
+                color: white;
+            }
+
+            .nav-menu-link:hover {
+                color: $color_1;
+            }
+        }
+    }
+    .nav-toggle {
+        color: $color_1;
+        background: none;
+        border: none;
+        font-size:25px;
+        padding: 0 20px;
+        line-height: 80px;
+        display: none;
+    }
+}
+ 
+/*--INDEX.HTML--*/
+
+ #home {
+    background-image: linear-gradient(rgba(5,7,12,0.90),rgba(5,7,12,0.90)),
+    url(../Imagenes/Domótica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-width {
+    max-width: 1300px;
+    margin:auto;
+    padding: 0 40px;
+}
+
+#home .inner-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    .content {
+        width: 100%;
+        color: white;
+        
+        h1 {
+            font-weight: 700;
+        }
+    }
+    .buttons {
+        margin-top: 60px;
+        
+        a {
+            display: inline-block;
+            margin: 15px 30px;
+            color: $color_1;
+            font-size:15px;
+            width: 180px;
+            border: 1px solid $color_1;
+            padding: 14px 0;
+            border-radius: 6px;
+            transition: .2s linear;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: $color_1;
+            color: white;
+        }
+    
+    }
+    .search-box {
+        margin-top: 50px;
+        display:inline-block;
+        width: 450px;
+        height: 60px;
+        border-radius: 40px;
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid $color_1;
+    }
+    .search-box:hover > .search-text{
+        width: 240px;
+        padding: 0 6px;
+    
+    }
+    .search-btn {
+        color: $color_1;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        background: $color_3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    .search-btn:hover {
+        @extend .btn:hover;
+    }
+    .search-text {
+        border:none;
+        background:none;
+        outline:none;
+        float: left;
+        padding: 0;
+        color: white;
+        font-size:16px;
+        transition: 0.4s;
+        line-height: 40px;
+        width: 0;
+    }
+    
+}
+ 
+/*----BLOG----*/
+
+/*--CONTENIDO*/
+
+.container-content {
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+    display: flex;
+    justify-content:center;
+      article {
+          width: 100%;
+          padding: 20px;
+          padding-bottom: 40px;
+            h1 {
+              margin-top:20px;
+              font-weight: 500;
+              font-size:40px;
+            }
+            p {
+              margin-top:20px;
+              font-size:16px;  
+            }
+            img {
+                width: 100%;
+                margin-top:20px;
+            }
+        }
+
+}
+
+/*--ASIDE--*/
+
+.container-aside {
+    aside {
+        width: 320px;
+        border-radius:6px;
+        box-shadow: 0 0 20px -20px $color_2;
+        overflow: hidden;
+        margin-left: 40px;
+        margin-bottom: 40px;
+         img {
+             width: 100%;
+         }
+         h2, p {
+            margin-top: 20px;
+            padding: 0 20px;
+         }
+         button {
+             background-color: $color_1;
+             color: white;
+             margin-top: 20px;
+             margin-left: 20px;
+             padding: 10px 50px;
+             border: none;
+         }
+
+
+        }
+
+}
+
+/*---PRODUCTOS.HTML---*/
+  .titulo_productos {
+      margin-top:30px;
+      color: white;
+      margin-bottom: 40px;
+      justify-content:center;
+      text-align: center;
+       
+  }
+  .container_productos {
+      padding-bottom: 100px;
+      .row {
+        align-items: center;
+        justify-content:center;
+      }
+      .col {
+        width: 335px;
+        padding: 20px;
+        align-items: center;
+      }
+      .card {
+        color: white;
+        background-color: $color_2;
+        width: 300px;
+        height: 400px;
+        border-radius: 10px;
+        border: 3px solid $color_1;
+        transition: all 0.25s;
+        cursor: pointer;
+    }
+    .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 10px 15px $color_2;
+    }
+    .card-img-top {
+        width: 100%;
+        height:200px;
+        clip-path: polygon(0 0, 100% 0%, 100% 76%, 0 100%, 0% 50%);
+    }
+}
+
+/*--CONTACTO--*/
+ 
+.fondo-contacto {
+    @extend #home;
+     background-image: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+     url(../Imagenes/casa-domotica.jpg);
+          .página-contacto {
+              color: white;
+              width: 100%;
+              max-width: 1400px;
+              padding: 50px;
+              display: flex;
+              align-items: flex-start;
+              justify-content:center;
+              flex-wrap: wrap;
+              background: rgba(5,7,12,0.75);
+              border-radius: 5px;
+            }
+            .contactanos {
+                width: 100%;
+                margin-bottom: 80px;
+                text-transform: uppercase;
+                font-size:60px;
+                font-weight: 700;
+             }
+             .información-contacto {
+                flex: 1;
+               .formulario-contacto {
+                   flex: 1;
+               }
+            
+            }
+            .formulario-contacto {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:space-between;
+                .textb {
+                  width: calc(50% - 10px);
+                  height: 50px;
+                  padding: 12px;
+                  background-color:$color_3;
+                  border: none;
+                  color: white;
+                  margin-bottom: 20px;
+                }
+            
+            }
+            .item {
+                margin-bottom: 24px;
+                .icon {
+                   color: $color_1;
+                   font-size:30px;
+                   padding: 0 10px;
+                }
+            }
+            textarea {
+                width: 100%;
+                min-height:200px;
+                max-height:400px;
+                resize:vertical;
+                padding: 12px;
+                background-color: $color_3;
+                border: none;
+                color: white;
+                margin-bottom: 20px;
+            }
+            .btn {
+                width: 120px;
+                height: 40px;
+                margin-left: auto;
+                background-color:$color_1;
+                font-size:16px;
+                border:none;
+                color: white;
+                text-transform: uppercase;
+                cursor: pointer;
+                border: 2px solid $color_1;
+                transition: .3s linear;
+            }
+            .btn:hover {
+                background-color: transparent;
+                color: $color_1;
+            }
+       
+}  
+
+/*--SERVICIOS.HTML--*/
+
+/*--MIXINS--*/
+
+.titulo_servicios {
+      @extend .titulo_productos;  
+}
+
+@mixin contenedor-tarjetas($width, $height, ) {
+   
+    width: $width;
+    height: $height;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    color: white;
+    cursor: pointer;
+}
+.tarjeta-1 {
+    @include contenedor-tarjetas(330px, 450px);
+}
+.tarjeta-2 {
+    @include contenedor-tarjetas(330px, 450px);
+}
+.tarjeta-3 {
+    @include contenedor-tarjetas(330px, 450px);
+}
+
+.container_servicios {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    padding-bottom: 100px;
+    .tarjeta-1:hover {
+        transform: translateY(-15px);
+        box-shadow: 3px 3px 9px 10px $color_1;
+    }
+    .tarjeta-2:hover {
+        @extend .tarjeta-1;
+    }
+    .tarjeta-3:hover {
+        @extend .tarjeta-1;
+    }
+    .icon-servicio {
+        line-height: 70px;
+        font-size:40px;
+        color: $color_1;
+    }
+
+}
+     
+/*--FOOTER--*/
+footer {
+    background: $color_2;
+    padding: 30px 0;
+
+    .footer-contenedor {
+        max-width: 1300px;
+        margin: auto;
+        color: white;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    .redes-sociales {
+        margin: 20px 0; 
+        a {
+            color: white;
+            margin-right: 25px;
+            font-size: 22px;
+            text-decoration: none;
+            transition: .3s linear;
+        }
+        a:hover {
+            color:$color_1; 
+        }
+    }
+    .columna-derecha {
+        font-size: 26px;
+    }
+    .newsletter-form {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    .texto {
+        flex: 1;
+        padding: 10px 30px;
+        font-size: 16px;
+        background:$color_3;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+     }
+     .btn-footer {
+        border: 2px solid $color_1;
+        color: white;
+        border-radius: 2px;
+        padding: 10px;
+        font-size:16px;
+        background-color: $color_1;
+        margin-left: 10px;
+    }
+     .btn-footer:hover {
+        background-color: transparent;
+        color: $color_1;
+    }
+    
+}
+
+@media (max-width:768px) {
+    .header {
+        height: 80px;
+        
+    .nav {
+        display: flex;
+        justify-content:space-between;
+        margin: 0 auto;
+        .nav-link {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .logo {
+        font-size: 20px;
+        padding: 0 20px;
+        line-height: 80px;
+    }
+   
+    .nav-menu {
+       display: flex;
+       flex-direction: column;
+       align-items:center;
+       margin-right: 20px;
+       background-color:rgb(61, 59, 59);
+       position: fixed;
+       left: 0;
+       top: 60px;
+       width: 100%;
+       padding: 20px 0;
+       height: calc(100% - 60px);
+       overflow-y: auto;
+       left: 100%;
+       transition: left 0.3s;
+       z-index: 50;
+        .nav-menu-item {
+          font-size: 18px; 
+          line-height: 90px;
+           margin: 0 10px;
+           width: max-content;
+     }
+    
+    }
+    .nav-menu-link:hover {
+        color:$color_1;
+    }
+    .nav-toggle {
+        display:block;
+    }
+    .nav-menu_visible {
+          left: 0;
+    }
+ 
+  }
+
+}
+
+ 
