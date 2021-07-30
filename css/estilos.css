@@ -57,7 +57,7 @@ body {
     display: none; }
 
 /*--INDEX.HTML--*/
-#home, .fondo-contacto {
+#home, .fondo-contacto, .error_container {
   background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.9)), url(../Imagenes/Domótica.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,20 +73,20 @@ body {
   margin: auto;
   padding: 0 40px; }
 
-#home .inner-width, .fondo-contacto .inner-width {
+#home .inner-width, .fondo-contacto .inner-width, .error_container .inner-width {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   text-align: center; }
-  #home .inner-width .content, .fondo-contacto .inner-width .content {
+  #home .inner-width .content, .fondo-contacto .inner-width .content, .error_container .inner-width .content {
     width: 100%;
     color: white; }
-    #home .inner-width .content h1, .fondo-contacto .inner-width .content h1 {
+    #home .inner-width .content h1, .fondo-contacto .inner-width .content h1, .error_container .inner-width .content h1 {
       font-weight: 700; }
-  #home .inner-width .buttons, .fondo-contacto .inner-width .buttons {
+  #home .inner-width .buttons, .fondo-contacto .inner-width .buttons, .error_container .inner-width .buttons {
     margin-top: 60px; }
-    #home .inner-width .buttons a, .fondo-contacto .inner-width .buttons a {
+    #home .inner-width .buttons a, .fondo-contacto .inner-width .buttons a, .error_container .inner-width .buttons a {
       display: inline-block;
       margin: 15px 30px;
       color: #4a4ad3;
@@ -97,22 +97,22 @@ body {
       border-radius: 6px;
       transition: .2s linear;
       text-decoration: none; }
-    #home .inner-width .buttons a:hover, .fondo-contacto .inner-width .buttons a:hover {
+    #home .inner-width .buttons a:hover, .fondo-contacto .inner-width .buttons a:hover, .error_container .inner-width .buttons a:hover {
       background-color: #4a4ad3;
       color: white; }
-  #home .inner-width .search-box, .fondo-contacto .inner-width .search-box {
+  #home .inner-width .search-box, .fondo-contacto .inner-width .search-box, .error_container .inner-width .search-box {
     margin-top: 50px;
     display: inline-block;
-    width: 450px;
+    width: 300px;
     height: 60px;
     border-radius: 40px;
     padding: 10px;
     background-color: transparent;
     border: 1px solid #4a4ad3; }
-  #home .inner-width .search-box:hover > .search-text, .fondo-contacto .inner-width .search-box:hover > .search-text {
-    width: 240px;
+  #home .inner-width .search-box:hover > .search-text, .fondo-contacto .inner-width .search-box:hover > .search-text, .error_container .inner-width .search-box:hover > .search-text {
+    width: 200px;
     padding: 0 6px; }
-  #home .inner-width .search-btn, .fondo-contacto .inner-width .search-btn {
+  #home .inner-width .search-btn, .fondo-contacto .inner-width .search-btn, .error_container .inner-width .search-btn {
     color: #4a4ad3;
     float: right;
     width: 40px;
@@ -123,7 +123,7 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none; }
-  #home .inner-width .search-text, .fondo-contacto .inner-width .search-text {
+  #home .inner-width .search-text, .fondo-contacto .inner-width .search-text, .error_container .inner-width .search-text {
     border: none;
     background: none;
     outline: none;
@@ -154,10 +154,12 @@ body {
       font-size: 40px; }
     .container-content article p {
       margin-top: 20px;
-      font-size: 16px; }
+      font-size: 20px; }
     .container-content article img {
       width: 100%;
       margin-top: 20px; }
+    .container-content article li {
+      font-size: 20px; }
 
 /*--ASIDE--*/
 .container-aside aside {
@@ -221,7 +223,7 @@ body {
     color: white;
     width: 100%;
     max-width: 1400px;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -232,7 +234,7 @@ body {
     width: 100%;
     margin-bottom: 80px;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 700; }
   .fondo-contacto .información-contacto {
     flex: 1; }
@@ -278,7 +280,7 @@ body {
     cursor: pointer;
     border: 2px solid #4a4ad3;
     transition: .3s linear; }
-  .fondo-contacto .btn:hover, .fondo-contacto #home .inner-width .search-btn:hover, #home .inner-width .fondo-contacto .search-btn:hover, .fondo-contacto .inner-width .search-btn:hover {
+  .fondo-contacto .btn:hover, .fondo-contacto #home .inner-width .search-btn:hover, #home .inner-width .fondo-contacto .search-btn:hover, .fondo-contacto .inner-width .search-btn:hover, .fondo-contacto .error_container .inner-width .search-btn:hover, .error_container .inner-width .fondo-contacto .search-btn:hover {
     background-color: transparent;
     color: #4a4ad3; }
 
@@ -295,6 +297,8 @@ body {
   transition: all 0.25s;
   color: white;
   cursor: pointer; }
+  .tarjeta-1 h3, .container_servicios .tarjeta-2:hover h3, .container_servicios .tarjeta-3:hover h3 {
+    margin-top: 50px; }
 
 .tarjeta-2 {
   width: 330px;
@@ -307,6 +311,8 @@ body {
   transition: all 0.25s;
   color: white;
   cursor: pointer; }
+  .tarjeta-2 h3 {
+    margin-top: 50px; }
 
 .tarjeta-3 {
   width: 330px;
@@ -319,6 +325,8 @@ body {
   transition: all 0.25s;
   color: white;
   cursor: pointer; }
+  .tarjeta-3 h3 {
+    margin-top: 50px; }
 
 .container_servicios {
   width: 100%;
@@ -328,13 +336,14 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  padding-bottom: 100px; }
+  padding-bottom: 150px; }
   .container_servicios .tarjeta-1:hover, .container_servicios .tarjeta-2:hover, .container_servicios .tarjeta-3:hover {
     transform: translateY(-15px);
     box-shadow: 3px 3px 9px 10px #4a4ad3; }
   .container_servicios .icon-servicio {
+    margin-top: 20px;
     line-height: 70px;
-    font-size: 40px;
+    font-size: 60px;
     color: #4a4ad3; }
 
 /*--FOOTER--*/
@@ -388,7 +397,27 @@ footer {
     background-color: transparent;
     color: #4a4ad3; }
 
-@media (max-width: 768px) {
+/*---PAGINA DE ERROR-----*/
+.error_container {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../Imagenes/error.png); }
+  .error_container .contenido {
+    color: white;
+    font-size: 100px; }
+
+/*---MEDIA QUERIES--*/
+@media screen and (max-width: 1020px) {
+  .container-content {
+    width: 100%;
+    flex-direction: column; }
+  .container-aside {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .container-aside aside {
+      max-width: 300px;
+      margin: 10px; } }
+
+@media screen and (max-width: 992px) {
   .header {
     height: 80px; }
     .header .nav {
@@ -410,7 +439,7 @@ footer {
       background-color: #3d3b3b;
       position: fixed;
       left: 0;
-      top: 60px;
+      top: 80px;
       width: 100%;
       padding: 20px 0;
       height: calc(100% - 60px);
@@ -429,3 +458,7 @@ footer {
       display: block; }
     .header .nav-menu_visible {
       left: 0; } }
+
+@media screen and (max-width: 480px) {
+  .search-box {
+    width: 200px; } }

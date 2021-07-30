@@ -140,7 +140,7 @@ body {
     .search-box {
         margin-top: 50px;
         display:inline-block;
-        width: 450px;
+        width: 300px;
         height: 60px;
         border-radius: 40px;
         padding: 10px;
@@ -148,7 +148,7 @@ body {
         border: 1px solid $color_1;
     }
     .search-box:hover > .search-text{
-        width: 240px;
+        width: 200px;
         padding: 0 6px;
     
     }
@@ -204,11 +204,14 @@ body {
             }
             p {
               margin-top:20px;
-              font-size:16px;  
+              font-size:20px;  
             }
             img {
                 width: 100%;
                 margin-top:20px;
+            }
+            li {
+                font-size: 20px;
             }
         }
 
@@ -296,7 +299,7 @@ body {
               color: white;
               width: 100%;
               max-width: 1400px;
-              padding: 50px;
+              padding: 30px;
               display: flex;
               align-items: flex-start;
               justify-content:center;
@@ -308,7 +311,7 @@ body {
                 width: 100%;
                 margin-bottom: 80px;
                 text-transform: uppercase;
-                font-size:60px;
+                font-size:45px;
                 font-weight: 700;
              }
              .información-contacto {
@@ -392,6 +395,10 @@ body {
     transition: all 0.25s;
     color: white;
     cursor: pointer;
+      h3 {
+          margin-top: 50px;
+      }
+
 }
 .tarjeta-1 {
     @include contenedor-tarjetas(330px, 450px);
@@ -411,7 +418,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin:auto;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     .tarjeta-1:hover {
         transform: translateY(-15px);
         box-shadow: 3px 3px 9px 10px $color_1;
@@ -423,8 +430,9 @@ body {
         @extend .tarjeta-1;
     }
     .icon-servicio {
+        margin-top: 20px;
         line-height: 70px;
-        font-size:40px;
+        font-size:60px;
         color: $color_1;
     }
 
@@ -493,7 +501,42 @@ footer {
     
 }
 
-@media (max-width:768px) {
+
+/*---PAGINA DE ERROR-----*/
+.error_container {
+    @extend #home;
+     background-image: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
+     url(../Imagenes/error.png);
+        .contenido {
+            color: white;
+            font-size:100px;
+        }
+     
+}
+
+/*---MEDIA QUERIES--*/
+
+
+
+@media screen and (max-width:1020px) {
+    .container-content {
+      width:100%;
+      flex-direction: column;
+    }
+    .container-aside {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+          aside {
+              max-width: 300px;
+              margin: 10px;
+          }
+    }
+
+ 
+}
+
+@media screen and (max-width:992px) {
     .header {
         height: 80px;
         
@@ -520,7 +563,7 @@ footer {
        background-color:rgb(61, 59, 59);
        position: fixed;
        left: 0;
-       top: 60px;
+       top: 80px;
        width: 100%;
        padding: 20px 0;
        height: calc(100% - 60px);
@@ -550,4 +593,10 @@ footer {
 
 }
 
- 
+@media screen and (max-width:480px) {
+    .search-box {
+        width: 200px;
+    }
+}
+
+
