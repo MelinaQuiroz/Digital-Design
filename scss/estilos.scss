@@ -1,7 +1,7 @@
 $tipografia_principal: "Krub", sans-serif;
 $background_color_principal: rgb(46, 44, 44);
 
-$color_1: rgb(74, 74, 211);
+$color_1: rgb(130, 34, 219);
 $color_2: rgb(31, 29, 29);
 $color_3: rgb(61, 59, 59);
 
@@ -19,6 +19,13 @@ body {
     font-family: $tipografia_principal;
     background-color: $background_color_principal;
 }
+a {
+    text-decoration: none;
+    color:white;
+}
+a:hover {
+    color:white;
+}
 
 /*Todo el header*/
 .header {
@@ -35,6 +42,7 @@ body {
         .nav-link {
             color: white;
             text-decoration: none;
+
         }
     
         .logo {
@@ -55,7 +63,7 @@ body {
         .nav-menu {
             display: flex;
             text-transform: uppercase;
-            margin-right:30px;
+            margin-right:100px;
             list-style: none;
            
             .nav-menu-item {
@@ -79,13 +87,17 @@ body {
         line-height: 80px;
         display: none;
     }
+
+    i {
+        color: white;
+    }
 }
  
 /*--INDEX.HTML--*/
 
  #home {
     background-image: linear-gradient(rgba(5,7,12,0.90),rgba(5,7,12,0.90)),
-    url(../Imagenes/Domótica.jpg);
+    url(../images/Domótica.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -294,7 +306,7 @@ body {
 .fondo-contacto {
     @extend #home;
      background-image: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),
-     url(../Imagenes/casa-domotica.jpg);
+     url(../images/casa-domotica.jpg);
           .página-contacto {
               color: white;
               width: 100%;
@@ -355,25 +367,26 @@ body {
                 color: white;
                 margin-bottom: 20px;
             }
-            .btn {
-                width: 120px;
-                height: 40px;
-                margin-left: auto;
-                background-color:$color_1;
-                font-size:16px;
-                border:none;
-                color: white;
-                text-transform: uppercase;
-                cursor: pointer;
-                border: 2px solid $color_1;
-                transition: .3s linear;
-            }
-            .btn:hover {
-                background-color: transparent;
-                color: $color_1;
-            }
-       
-}  
+            
+}
+.btn {
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    background-color:$color_1;
+    font-size:16px;
+    border:none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid $color_1;
+    transition: .3s linear;
+}
+.btn:hover {
+    background-color: transparent;
+    color: $color_1;
+}
+
 
 /*--SERVICIOS.HTML--*/
 
@@ -514,6 +527,138 @@ footer {
      
 }
 
+/*-----JAVASCRIPT---*/
+/*---CALCULOS.HTML---*/
+.calculadora-form {
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 0 20px;
+    margin-top: 200px;
+      p {
+          margin-top:10px;
+          font-size:20px;
+      }
+       .texto {
+           width: 300px;
+           border-radius: 20px;
+           background-color: $color_2;
+           border-color: $color_1;
+           padding: 10px;
+           color: white;
+           text-align: center;
+       }
+       input:focus { 
+        outline: 1px solid $color_1;
+
+       }
+}
+.btn-container {
+    margin-top:20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+      .btn-calculadora {
+          margin: 20px;
+          @extend .btn;
+      }
+      #miTotal {
+          @extend .btn-calculadora;
+      }
+}
+
+/*---CARRITO---*/
+.titulo-carrito {
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size:40px;
+}
+.card-group {
+    margin-bottom: 400px;
+}
+.col-carrito {
+    padding: 20px;
+    .card {
+       box-shadow: 10px 10px rgb(20, 20, 20);
+         img {
+             width: 100%;
+         }
+        .img-fluid {
+            height: 230px;
+        }
+
+    }
+    .card-body {
+        padding-top: 50px;
+        height: 230px;
+        background-color:$color_2;
+        color: white;
+        
+         
+    }
+    .card-precio {
+        color: $color_1;
+        font-size: 35px;
+        font-weight: 700;
+
+    }
+
+}
+
+   
+    .agregar-carrito {
+        width: 300px;
+        font-size:20px;
+        background: $color_1;
+        border-radius: 10px;
+        padding: 10px;
+           i {
+               padding: 5px;
+           }
+        
+    }
+    .boton-agregar-carrito:hover { 
+        background-color: transparent;
+        color: $color_1;
+        border: 1px solid $color_1;
+        transition: all 0.25s;
+    }
+
+
+.icon-carrito {
+    font-size: 25px;
+    line-height: 100px;
+    margin-left: 20px;
+}
+.icon-carrito:hover {
+    @extend .btn:hover;
+}
+
+/*---MODAL CARRITO ---*/
+.modal-body {
+ background: $color_2;
+ color: white;
+}
+.modal-header {
+    @extend .modal-body;
+}
+.modal-footer {
+    @extend .modal-body;
+}
+.modalImg {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+.modalPrecio {
+    font-size: 20px;
+}
+
+
+
 /*---MEDIA QUERIES--*/
 
 
@@ -591,12 +736,6 @@ footer {
  
   }
 
-}
-
-@media screen and (max-width:480px) {
-    .search-box {
-        width: 200px;
-    }
 }
 
 

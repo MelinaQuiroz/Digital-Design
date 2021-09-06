@@ -11,8 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "animate.css": "^4.1.1",
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.9"
+    "nodemon": "^2.0.12"
   }
 }

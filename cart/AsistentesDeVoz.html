@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Digital Design</title>
+    <meta name="description" content="Nuestros productos son de alta calidad y a precios accesible">
+    <meta name="keywords" content=" domótica, casa inteligente,seguridad,tecnología,iluminaciión inteligente, sensores,cámaras de seguridad" />
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="../css/estilos.css" rel="stylesheet" />
+    <script defer src="../js/index.js"></script>
+   
+    
+  </head>
+
+<body>
+    <body>
+        <header class="header">
+          <nav class="nav">
+            <a href="../index.html" class="logo" >Digital Design</a>
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+              <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">Inicio</a></li>
+              <li class="nav-menu-item"><a href="../Paginas/Productos.html" class="nav-menu-link nav-link">Productos</a></li>
+              <li class="nav-menu-item"><a href="../Paginas/Servicio.html" class="nav-menu-link nav-link">Servicio</a></li>
+              <li class="nav-menu-item"><a href="../Paginas/Contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+              <li class="nav-menu-item"><a href="../Paginas/Foro.html" class="nav-menu-link nav-link">Blog</a></li>
+              <a type="button" data-bs-toggle="modal" data-bs-target="#carritoModal">
+                <i class="icon-carrito fas fa-shopping-cart"></i>
+              </a>
+              <div id="cartNumbers"> 
+                <span class="fw-bold text-white" id="cart-counter">0</span> <!--CONTADOR DEL CARRITO-->
+            </div>
+            </ul>
+    
+          </nav>
+        </header>
+     
+       <!---MODAL----->
+
+        <section class="container">
+          <div class="modal fade" id="carritoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                  <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                          Tu carrito de compras
+                      </h5>
+                      <button type="button" class="close btn btn-outline-danger" data-bs-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="row modal-header text-center">
+                          <div class="col-3">
+                              <h6>Producto</h6>
+                          </div>
+                          <div class="col-3">
+                              <h6>Precio</h6>
+                          </div>
+                          <div class="col-3">
+                              <h6>Cantidad</h6>
+                          </div>
+                          <div class="col-3">
+                              <h6>Eliminar</h6>
+                          </div>
+                      </div> 
+                      <div class="show-cart">  
+                      </div>
+                        
+                      <div class="d-flex justify-content-end">
+                          <h5 class="precioTotal">Total: <span class="total-price">0</span> </h5> <!-- PRECIO TOTAL-->
+                      </div>   
+                  </div>
+                  <div class="modal-footer border-top-0 d-flex justify-content-between">
+                      <button type="button" class="btn " data-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn  btn-vaciar-carrito">Vaciar</button> <!-- VACIAR -->
+                      <button type="button" class="btn  btn-finalizar-compra" data-toggle="modal" data-target="#comprarModal"> <!-- FINALIZAR-->
+                          Finalizar
+                      </button> 
+                     
+                               
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>    
+</header>
+                        
+
+
+
+
+
+      <!--PRODUCTOS-->
+
+      <h2 class="titulo-carrito">Asistentes de Voz</h2>
+
+      <div class="container">
+        <div class="productos">
+       <div class="card-group">
+        <div class="col-carrito">
+        <div class="card border-dark mb-3 text-center" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../images/asistentes_de_voz.png" class=" prod-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Alexa</h5>
+                <p class=" card-precio">$13000</p>
+                <a class="agregar-carrito" href="#"><i class="fas fa-shopping-cart"></i>Añadir al Carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-carrito">
+        <div class="card border-dark mb-3 text-center" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="../images/google_assistant.jpg" class="prod-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Google Assistant</h5>
+                <p class="card-precio">$4000</p>
+                <a  class="agregar-carrito" href="#"><i class="fas fa-shopping-cart"></i>Añadir al Carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       </div>
+      </div>
+      </div>
+
+
+      <!--FOOTER -->
+
+    <footer>
+        <div class="footer-contenedor">
+           <div class="columna-izquierda">
+             <h2>Nuestras Redes</h2>
+              <div class="redes-sociales">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <p class="marca">© 2021 Digital Design. Todos los Derechos Reservados.</p>
+           </div>
+  
+           <div class="columna-derecha">
+           <h2>Nuestro Newsletter</h2>
+            <div class="border"></div>
+            <p>Escribi tu email para enterarte de todo lo nuevo</p>
+            <form action="" class="newsletter-form">
+              <input type="text" class="texto" placeholder="Email">
+               <input type="submit" class="btn-footer" value="Enviar">
+            </form>
+          </div>
+        </div>
+     </footer>
+
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -12,6 +12,13 @@ body {
   font-family: "Krub", sans-serif;
   background-color: #2e2c2c; }
 
+a {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  color: white; }
+
 /*Todo el header*/
 .header {
   background-color: #1f1d1d;
@@ -25,7 +32,7 @@ body {
       color: white;
       text-decoration: none; }
     .header .nav .logo {
-      color: #4a4ad3;
+      color: #8222db;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 25px;
@@ -34,11 +41,11 @@ body {
       .header .nav .logo .logo:hover {
         transform: scale(1.05);
         transition: all 0.20s;
-        color: #4a4ad3; }
+        color: #8222db; }
     .header .nav .nav-menu {
       display: flex;
       text-transform: uppercase;
-      margin-right: 30px;
+      margin-right: 100px;
       list-style: none; }
       .header .nav .nav-menu .nav-menu-item {
         font-size: 18px;
@@ -46,19 +53,21 @@ body {
         margin: 0 10px;
         color: white; }
       .header .nav .nav-menu .nav-menu-link:hover {
-        color: #4a4ad3; }
+        color: #8222db; }
   .header .nav-toggle {
-    color: #4a4ad3;
+    color: #8222db;
     background: none;
     border: none;
     font-size: 25px;
     padding: 0 20px;
     line-height: 80px;
     display: none; }
+  .header i {
+    color: white; }
 
 /*--INDEX.HTML--*/
 #home, .fondo-contacto, .error_container {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.9)), url(../Imagenes/Domótica.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.9)), url(../images/Domótica.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -89,16 +98,16 @@ body {
     #home .inner-width .buttons a, .fondo-contacto .inner-width .buttons a, .error_container .inner-width .buttons a {
       display: inline-block;
       margin: 15px 30px;
-      color: #4a4ad3;
+      color: #8222db;
       font-size: 15px;
       width: 180px;
-      border: 1px solid #4a4ad3;
+      border: 1px solid #8222db;
       padding: 14px 0;
       border-radius: 6px;
       transition: .2s linear;
       text-decoration: none; }
     #home .inner-width .buttons a:hover, .fondo-contacto .inner-width .buttons a:hover, .error_container .inner-width .buttons a:hover {
-      background-color: #4a4ad3;
+      background-color: #8222db;
       color: white; }
   #home .inner-width .search-box, .fondo-contacto .inner-width .search-box, .error_container .inner-width .search-box {
     margin-top: 50px;
@@ -108,12 +117,12 @@ body {
     border-radius: 40px;
     padding: 10px;
     background-color: transparent;
-    border: 1px solid #4a4ad3; }
+    border: 1px solid #8222db; }
   #home .inner-width .search-box:hover > .search-text, .fondo-contacto .inner-width .search-box:hover > .search-text, .error_container .inner-width .search-box:hover > .search-text {
     width: 200px;
     padding: 0 6px; }
   #home .inner-width .search-btn, .fondo-contacto .inner-width .search-btn, .error_container .inner-width .search-btn {
-    color: #4a4ad3;
+    color: #8222db;
     float: right;
     width: 40px;
     height: 40px;
@@ -175,7 +184,7 @@ body {
     margin-top: 20px;
     padding: 0 20px; }
   .container-aside aside button {
-    background-color: #4a4ad3;
+    background-color: #8222db;
     color: white;
     margin-top: 20px;
     margin-left: 20px;
@@ -205,7 +214,7 @@ body {
     width: 300px;
     height: 400px;
     border-radius: 10px;
-    border: 3px solid #4a4ad3;
+    border: 3px solid #8222db;
     transition: all 0.25s;
     cursor: pointer; }
   .container_productos .card:hover {
@@ -218,7 +227,7 @@ body {
 
 /*--CONTACTO--*/
 .fondo-contacto {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../Imagenes/casa-domotica.jpg); }
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/casa-domotica.jpg); }
   .fondo-contacto .página-contacto {
     color: white;
     width: 100%;
@@ -255,7 +264,7 @@ body {
   .fondo-contacto .item {
     margin-bottom: 24px; }
     .fondo-contacto .item .icon {
-      color: #4a4ad3;
+      color: #8222db;
       font-size: 30px;
       padding: 0 10px; }
   .fondo-contacto textarea {
@@ -268,21 +277,23 @@ body {
     border: none;
     color: white;
     margin-bottom: 20px; }
-  .fondo-contacto .btn {
-    width: 120px;
-    height: 40px;
-    margin-left: auto;
-    background-color: #4a4ad3;
-    font-size: 16px;
-    border: none;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: 2px solid #4a4ad3;
-    transition: .3s linear; }
-  .fondo-contacto .btn:hover, .fondo-contacto #home .inner-width .search-btn:hover, #home .inner-width .fondo-contacto .search-btn:hover, .fondo-contacto .inner-width .search-btn:hover, .fondo-contacto .error_container .inner-width .search-btn:hover, .error_container .inner-width .fondo-contacto .search-btn:hover {
-    background-color: transparent;
-    color: #4a4ad3; }
+
+.btn, .btn-container .btn-calculadora, .btn-container #miTotal {
+  width: 120px;
+  height: 40px;
+  margin-left: auto;
+  background-color: #8222db;
+  font-size: 16px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #8222db;
+  transition: .3s linear; }
+
+.btn:hover, #home .inner-width .search-btn:hover, .fondo-contacto .inner-width .search-btn:hover, .error_container .inner-width .search-btn:hover, .btn-container .btn-calculadora:hover, .btn-container #miTotal:hover, .icon-carrito:hover {
+  background-color: transparent;
+  color: #8222db; }
 
 /*--SERVICIOS.HTML--*/
 /*--MIXINS--*/
@@ -339,12 +350,12 @@ body {
   padding-bottom: 150px; }
   .container_servicios .tarjeta-1:hover, .container_servicios .tarjeta-2:hover, .container_servicios .tarjeta-3:hover {
     transform: translateY(-15px);
-    box-shadow: 3px 3px 9px 10px #4a4ad3; }
+    box-shadow: 3px 3px 9px 10px #8222db; }
   .container_servicios .icon-servicio {
     margin-top: 20px;
     line-height: 70px;
     font-size: 60px;
-    color: #4a4ad3; }
+    color: #8222db; }
 
 /*--FOOTER--*/
 footer {
@@ -368,7 +379,7 @@ footer {
       text-decoration: none;
       transition: .3s linear; }
     footer .redes-sociales a:hover {
-      color: #4a4ad3; }
+      color: #8222db; }
   footer .columna-derecha {
     font-size: 26px; }
   footer .newsletter-form {
@@ -386,16 +397,16 @@ footer {
     outline: none;
     border-radius: 5px; }
   footer .btn-footer {
-    border: 2px solid #4a4ad3;
+    border: 2px solid #8222db;
     color: white;
     border-radius: 2px;
     padding: 10px;
     font-size: 16px;
-    background-color: #4a4ad3;
+    background-color: #8222db;
     margin-left: 10px; }
   footer .btn-footer:hover {
     background-color: transparent;
-    color: #4a4ad3; }
+    color: #8222db; }
 
 /*---PAGINA DE ERROR-----*/
 .error_container {
@@ -403,6 +414,99 @@ footer {
   .error_container .contenido {
     color: white;
     font-size: 100px; }
+
+/*-----JAVASCRIPT---*/
+/*---CALCULOS.HTML---*/
+.calculadora-form {
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 200px; }
+  .calculadora-form p {
+    margin-top: 10px;
+    font-size: 20px; }
+  .calculadora-form .texto {
+    width: 300px;
+    border-radius: 20px;
+    background-color: #1f1d1d;
+    border-color: #8222db;
+    padding: 10px;
+    color: white;
+    text-align: center; }
+  .calculadora-form input:focus {
+    outline: 1px solid #8222db; }
+
+.btn-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .btn-container .btn-calculadora, .btn-container #miTotal {
+    margin: 20px; }
+
+/*---CARRITO---*/
+.titulo-carrito {
+  color: white;
+  text-align: center;
+  margin: 20px;
+  font-size: 40px; }
+
+.card-group {
+  margin-bottom: 400px; }
+
+.col-carrito {
+  padding: 20px; }
+  .col-carrito .card {
+    box-shadow: 10px 10px #141414; }
+    .col-carrito .card img {
+      width: 100%; }
+    .col-carrito .card .img-fluid {
+      height: 230px; }
+  .col-carrito .card-body {
+    padding-top: 50px;
+    height: 230px;
+    background-color: #1f1d1d;
+    color: white; }
+  .col-carrito .card-precio {
+    color: #8222db;
+    font-size: 35px;
+    font-weight: 700; }
+
+.agregar-carrito {
+  width: 300px;
+  font-size: 20px;
+  background: #8222db;
+  border-radius: 10px;
+  padding: 10px; }
+  .agregar-carrito i {
+    padding: 5px; }
+
+.boton-agregar-carrito:hover {
+  background-color: transparent;
+  color: #8222db;
+  border: 1px solid #8222db;
+  transition: all 0.25s; }
+
+.icon-carrito {
+  font-size: 25px;
+  line-height: 100px;
+  margin-left: 20px; }
+
+/*---MODAL CARRITO ---*/
+.modal-body, .modal-header, .modal-footer {
+  background: #1f1d1d;
+  color: white; }
+
+.modalImg {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px; }
+
+.modalPrecio {
+  font-size: 20px; }
 
 /*---MEDIA QUERIES--*/
 @media screen and (max-width: 1020px) {
@@ -453,12 +557,8 @@ footer {
         margin: 0 10px;
         width: max-content; }
     .header .nav-menu-link:hover {
-      color: #4a4ad3; }
+      color: #8222db; }
     .header .nav-toggle {
       display: block; }
     .header .nav-menu_visible {
       left: 0; } }
-
-@media screen and (max-width: 480px) {
-  .search-box {
-    width: 200px; } }
