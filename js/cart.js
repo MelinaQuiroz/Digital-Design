@@ -1,3 +1,15 @@
+ /*----MENU DESPEGABLE----*/
+ $(document).ready(function() {
+   const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+     navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu_visible");
+ });
+
+ 
+  
+
 
 /*----CARRITO---*/
   //Productos
@@ -9,6 +21,8 @@
  
 
     /*---Agregar al carrito---*/
+     
+      
         const agregarCarrito = document.querySelectorAll(".agregar-carrito"); // Botón "Agregar al carrito"
         
   
@@ -32,22 +46,40 @@
                                          <input class="text-center" type="number" value="1">
                                      </div>
                                      <div class="col-3">
-                                     <a href="#"<i class="fas fa-trash-alt"></i></a>
+                                      <a href="#"><i class="fas fa-trash-alt"></i></a>
+
                                      </div>
                                  </div>
                              `
                       showCart.appendChild(carritoDiv);     
-            
-            })
+              
+                      /*--JQUERY--*/
+
+                      /*--ANIMACION--*/
+                      $(".icon-carrito").click(function(){
+                        $("#carritoModal").fadeIn(300, function(){
+                          console.log("transition done");
+                        });
+                      });
+                        
+
+
+                        $(".btn-vaciar-carrito").click(function () {
+                        $(carritoDiv).remove();
+                        })     
+           
+           
+           
+             })
           });
 
-          /*--JQUERY--*/
+        })
 
-          // $(document).ready(function() {
-             
-          //   $(".total-price").css("color", "violet"); 
           
-          // });
+
+     
+
+         
                         
                         
 
