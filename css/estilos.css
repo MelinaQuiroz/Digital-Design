@@ -278,7 +278,7 @@ a:hover {
     color: white;
     margin-bottom: 20px; }
 
-.btn, .btn-container .btn-calculadora, .btn-container #miTotal {
+.btn {
   width: 120px;
   height: 40px;
   margin-left: auto;
@@ -291,7 +291,7 @@ a:hover {
   border: 2px solid #8222db;
   transition: .3s linear; }
 
-.btn:hover, #home .inner-width .search-btn:hover, .fondo-contacto .inner-width .search-btn:hover, .error_container .inner-width .search-btn:hover, .btn-container .btn-calculadora:hover, .btn-container #miTotal:hover, .icon-carrito:hover {
+.btn:hover, #home .inner-width .search-btn:hover, .fondo-contacto .inner-width .search-btn:hover, .error_container .inner-width .search-btn:hover, .icon-carrito:hover {
   background-color: transparent;
   color: #8222db; }
 
@@ -416,37 +416,6 @@ footer {
     font-size: 100px; }
 
 /*-----JAVASCRIPT---*/
-/*---CALCULOS.HTML---*/
-.calculadora-form {
-  margin: auto;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px;
-  margin-top: 200px; }
-  .calculadora-form p {
-    margin-top: 10px;
-    font-size: 20px; }
-  .calculadora-form .texto {
-    width: 300px;
-    border-radius: 20px;
-    background-color: #1f1d1d;
-    border-color: #8222db;
-    padding: 10px;
-    color: white;
-    text-align: center; }
-  .calculadora-form input:focus {
-    outline: 1px solid #8222db; }
-
-.btn-container {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .btn-container .btn-calculadora, .btn-container #miTotal {
-    margin: 20px; }
-
 /*---CARRITO---*/
 .titulo-carrito {
   color: white;

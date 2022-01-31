@@ -528,47 +528,6 @@ footer {
 }
 
 /*-----JAVASCRIPT---*/
-/*---CALCULOS.HTML---*/
-.calculadora-form {
-    margin: auto;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    padding: 0 20px;
-    margin-top: 200px;
-      p {
-          margin-top:10px;
-          font-size:20px;
-      }
-       .texto {
-           width: 300px;
-           border-radius: 20px;
-           background-color: $color_2;
-           border-color: $color_1;
-           padding: 10px;
-           color: white;
-           text-align: center;
-       }
-       input:focus { 
-        outline: 1px solid $color_1;
-
-       }
-}
-.btn-container {
-    margin-top:20px;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-      .btn-calculadora {
-          margin: 20px;
-          @extend .btn;
-      }
-      #miTotal {
-          @extend .btn-calculadora;
-      }
-}
-
 /*---CARRITO---*/
 .titulo-carrito {
     color: white;
